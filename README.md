@@ -4,7 +4,7 @@ Aplicação desenvolvida para um desafio de frontend.
 
 Instale as dependências:
 ```bash
-yarn dev
+yarn
 ```
 Para iniciar a fake-api:
 ```bash
