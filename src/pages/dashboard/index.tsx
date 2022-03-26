@@ -10,11 +10,12 @@ import { enterprisesApi, Enterprise } from '../../services/enterprisesApi'
 export default function Dashboard() {
   const [loading, setLoading] = useState(false)
   const [enterprises, setEnterprises] = useState<Enterprise[]>([])
+  const [searchQuery, setSearchQuery] = useState('');
 
-  const loadData = async () => {
+  const loadData = async (name?: string) => {
     try {
       setLoading(true)
-      const enterprises = await enterprisesApi.fetchAllEnterprise()
+      const enterprises = await enterprisesApi.fetchAllEnterprise(name??'')
       setEnterprises(enterprises)
       setLoading(false)
     } catch (error) {
@@ -22,15 +23,14 @@ export default function Dashboard() {
     }
   }
   useEffect(() => {
-    loadData()
-  }, [])
-
+    loadData(searchQuery)
+  }, [searchQuery])
 
   return (
     <>
       <Header onReloadEnterprises={loadData} />
       <Container>
-        <SearchBar />
+        <SearchBar onChange={(value) => setSearchQuery(value)} />
         {loading ? (
           <span>Carregando...</span>
         ) : (

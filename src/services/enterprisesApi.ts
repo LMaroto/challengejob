@@ -21,8 +21,8 @@ async function deleteEnterprise(id: string) {
     
 }
 
-async function fetchAllEnterprise() {
-    const response = await api.get<Enterprise[]>(`enterprises`)
+async function fetchAllEnterprise(name: string) {
+    const response = await api.get<Enterprise[]>(`enterprises?q=${name}`)
     return response.data
 }
 
