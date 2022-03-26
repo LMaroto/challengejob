@@ -17,8 +17,10 @@ export const Container = styled.div`
     font-weight: bold;
     color: var(--purple);
   }
+`;
 
-  button {
+export const AddButton = styled.button`
+
     display: flex;
     flex-direction: row;
     justify-content: space-beetwen;
@@ -46,5 +48,4 @@ export const Container = styled.div`
       background: ${darken(0.05, "#4F46BB")};
       transform: scale(1.03);
     }
-  }
 `;

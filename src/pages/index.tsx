@@ -8,7 +8,7 @@ const Home:NextPage = () => {
     <>
     <GlobalStyle />
     <Dashboard />
-    </>
+      </>
   )
 }
 export default Home

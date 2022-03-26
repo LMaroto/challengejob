@@ -1,26 +1,18 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
-  padding: 100px 8.5rem 0 10.25rem;
-
-  background: var(--background-gray);
-
-  height: 100vh;
-`;
-
-export const EnterpriseContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-beetwen;
 
   background: var(--white);
-  border-radius: 8px;
+  border-radius: 0.5rem;
 
   margin-bottom: 2rem;
   padding: 2rem;
 
   section {
-    width: 861px;
+    width: 100%;
 
     div {
       display: flex;
@@ -36,10 +28,9 @@ export const EnterpriseContainer = styled.div`
       button {
         border: none;
         background: none;
+        margin: 0;
 
         color: var(--purple);
-
-        margin: 0;
 
         transition: transform 0.2s;
         &:hover {
@@ -62,17 +53,17 @@ export const EnterpriseContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    
-    span {
-      border: 1px solid var(--purple);
-      border-radius: 71px;
-      padding: 8px 24px;
 
-      font-size: 12px;
+    span {
+      border: 0.0625rem solid var(--purple);
+      border-radius: 4.4375rem;
+      padding: 0.5rem 1.5rem;
+
+      font-size: 0.75rem;
     }
 
-    span:first-of-type{
+    span:first-of-type {
       margin-right: 1rem;
     }
   }
-`;
+`
