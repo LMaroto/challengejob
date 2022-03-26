@@ -1,4 +1,4 @@
-Aplicação desenvolvida como desafio.
+Aplicação desenvolvida para um desafio de frontend.
 
 ## Como executar?:
 
