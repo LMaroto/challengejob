@@ -1,6 +1,6 @@
 Aplicação desenvolvida para um desafio de frontend.
 
-## Como executar?:
+## Como executar?
 
 Instale as dependências:
 ```bash
